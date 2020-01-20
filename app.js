@@ -36,12 +36,16 @@ app.use(express.static(__dirname + "/public"));
 
 // Mongoose Setup
 mongoose.set('useFindAndModify', false);
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useUnifiedTopology', true);
+//mongoose.set('useNewUrlParser', true);
+//mongoose.set('useUnifiedTopology', true);
 
 // Mongoose Database Connection
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+var uri = 'mongodb+srv://veesergey:kgptf7jhx@yelpcamp-vthco.mongodb.net/test?retryWrites=true&w=majority';
 
+mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true }).
+then(() => console.log('Connected')).
+catch(err => console.log('Caught', err.stack));
 
 // seedDB(); // Seed the database
 
