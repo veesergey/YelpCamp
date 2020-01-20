@@ -41,10 +41,9 @@ mongoose.set('useFindAndModify', false);
 
 // Mongoose Database Connection
 // mongoose.connect("mongodb://localhost/yelp_camp");
-var uri = 'mongodb+srv://veesergey:CZpfcMu7ipaM4Iow@yelpcamp-vthco.mongodb.net/test?retryWrites=true&w=majority';
 
 // New Mongoose Connection Code Block
-mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true }).
+mongoose.connect(DATABASEURL, { useUnifiedTopology: true, useNewUrlParser: true }).
 then(() => console.log('Connected')).
 catch(err => console.log('Caught', err.stack));
 
