@@ -80,3 +80,18 @@ body{
 .no-cssanimations .slideshow li {
     opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+    #landing-header{
+        font-size: 10px;
+
+    }
+    #landing-header h1 {
+        font-size: 7em;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+}
