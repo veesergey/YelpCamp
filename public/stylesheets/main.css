@@ -21,3 +21,9 @@
     width: 30%;
     margin: 25px auto;
 }
+
+@media screen and (max-width: 600px) {
+    .formDiv {
+        width: 75%;
+    }
+}
