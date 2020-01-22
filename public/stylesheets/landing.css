@@ -97,3 +97,25 @@ body{
         border-radius: 10px;
     }
 }
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+    #landing-header{
+        font-size: 10px;
+
+    }
+    #landing-header h1 {
+        font-size: 7em;
+        width: 100%;
+        text-align: center;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+}
