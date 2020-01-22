@@ -88,6 +88,8 @@ body{
     }
     #landing-header h1 {
         font-size: 7em;
+        width: 100%;
+        text-align: center;
     }
     .btn {
         padding: 10px 20px;
