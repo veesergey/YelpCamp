@@ -1,3 +1,5 @@
+require('dotenv').config(); // Npm package for handling environment variables
+
 // Packages Declarations
 const express        = require('express'),
       bodyParser     = require('body-parser'),
@@ -10,6 +12,8 @@ const express        = require('express'),
       LocalStrategy  = require('passport-local'),
       User           = require('./models/user.js'),
       methodOverride = require('method-override');
+
+
 
 // Route Dependencies
 var commentRoutes = require('./routes/comments'),

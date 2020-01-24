@@ -22,6 +22,12 @@
     margin: 25px auto;
 }
 
+/* Google Map */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .formDiv {
         width: 75%;
