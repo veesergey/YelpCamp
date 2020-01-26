@@ -14,7 +14,6 @@ const express        = require('express'),
       methodOverride = require('method-override');
 
 
-
 // Route Dependencies
 var commentRoutes = require('./routes/comments'),
     campgroundRoutes = require('./routes/campgrounds'),
@@ -30,6 +29,7 @@ app.use(require("express-session")({
 }));
 
 // Express Setup
+app.locals.moment = require('moment'); // The require is down here so I can assign it to app.locals right away
 app.set('view engine', 'ejs'); // View Engine
 app.use(bodyParser.urlencoded({extended:true}));  // Allows use of body parser
 app.use(methodOverride("_method"));         // Allows PUT method to be used for RESTful Routes
