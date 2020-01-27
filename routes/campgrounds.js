@@ -102,24 +102,29 @@ router.get("/:id/edit", middleware.checkCampgroundOwnership, (req, res) => {
 
 // Update Campground Route
 router.put("/:id", middleware.checkCampgroundOwnership, (req, res) => {
-    geocoder.geocode(req.body.location, (err, data) => {
+    geocoder.geocode(req.body.campground.location, (err, data) => {
         if (err || !data.length) {
             req.flash('error', 'Invalid Address');
+            console.log(err);
             return res.redirect('back');
         }
         req.body.campground.lat = data[0].latitude;
         req.body.campground.lng = data[0].longitude;
         req.body.campground.location = data[0].formattedAddress;
+
+        Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(err, updatedCampground){
+            if (err) {
+                req.flash("error", err.message);
+                res.redirect("back");
+            }else{
+                req.flash("Success", "Successfully Updated");
+                res.redirect("/campgrounds/" + updatedCampground._id);
+
+            }
+        });
     })
-    Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(err, updatedCampground){
-        if (err) {
-            req.flash("error", err.message);
-            res.redirect("/campgrounds");
-        }else{
-            // req.flash("Success", "Successfully Updated");
-            res.redirect("/campgrounds");
-        }
-    });
+
+
 });
 
 // // Destroy Campground Route
