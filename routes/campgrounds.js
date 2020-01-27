@@ -117,7 +117,7 @@ router.put("/:id", middleware.checkCampgroundOwnership, (req, res) => {
                 req.flash("error", err.message);
                 res.redirect("back");
             }else{
-                req.flash("Success", "Successfully Updated");
+                req.flash("success", "Successfully Updated");
                 res.redirect("/campgrounds/" + updatedCampground._id);
 
             }

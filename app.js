@@ -14,6 +14,7 @@ const express        = require('express'),
       methodOverride = require('method-override');
 
 
+
 // Route Dependencies
 var commentRoutes = require('./routes/comments'),
     campgroundRoutes = require('./routes/campgrounds'),
@@ -40,7 +41,7 @@ app.use(express.static(__dirname + "/public"));
 
 // Mongoose Setup
 mongoose.set('useFindAndModify', false);
-//mongoose.set('useNewUrlParser', true);
+//mongoose.set('useNewUrlParser', Strue);
 //mongoose.set('useUnifiedTopology', true);
 
 // Mongoose Database Connection
