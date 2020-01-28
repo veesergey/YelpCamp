@@ -15,15 +15,18 @@ The purpose of this project is to further my skills in programming by learning f
 website I've actually hosted and theres more functionality and depth to the backend than anything I've done before.
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Express - 4.17.1
+* Mongoose - 5.8.1
+* NodeJS
+* MongoDB
+
+The app is hosted through [heroku](https://www.heroku.com/) and the database is hosted through MongoDB Atlas.
 
 ## Setup
 No setup necessary! This application is currently live and can be found [here!](http://veesergey.herokuapp.com/)
 
 ## Features
-List of features ready and TODOs for future development
+List of features
 * Anyone can create an account and add new campground reviews. 
 * You can see all submitted campgrounds and leave comments on other peoples submission.
 * When submitting campgrounds an address can be added and the location is shown to you by Google Maps.
