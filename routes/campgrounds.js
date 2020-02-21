@@ -6,6 +6,7 @@ var middleware = require("../middleware");
 // Geocoder (Google Maps)
 var NodeGeocoder = require('node-geocoder');
 
+
 var options = {
     provider: 'google',
     httpAdapter: 'https',
@@ -49,6 +50,7 @@ router.post("/", middleware.isLoggedIn, (req, res) => {
 
     // Get coordinates from address input
     geocoder.geocode(req.body.location, (err, data) => {
+        //Was getting a weird input here previously.
         if (err|| !data.length) {
             req.flash('error', 'Invalid Address');
             return res.redirect('back');
@@ -72,6 +74,7 @@ router.post("/", middleware.isLoggedIn, (req, res) => {
             if(err){
                 console.log(err);
             }else{
+                console.log('Created new campground.');
                 res.redirect("/campgrounds");
             }
         });
