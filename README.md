@@ -12,18 +12,21 @@ YelpCamp, a website that lets people review campgrounds and share their experien
 
 ## General info
 The purpose of this project is to further my skills in programming by learning full stack web development. This the first
-website I've actually hosted and theres more functionality and depth to the backend than anything I've done before.
+website I've actually hosted and theres more functionality and depth to the backend than anything I've done before. The latest change with this project is that its now also hosted through Amazon as well as Heroku! Using Terraform I created an EC2 instance running a Linux Server that is now hosting this web application.
 
 ## Technologies
 * Express - 4.17.1
 * Mongoose - 5.8.1
 * NodeJS
 * MongoDB
+* AWS
+* Google Maps API
+* Terraform
 
 The app is hosted through [heroku](https://www.heroku.com/) and the database is hosted through MongoDB Atlas.
 
 ## Setup
-No setup necessary! This application is currently live and can be found [here!](http://veesergey.herokuapp.com/)
+No setup necessary! This application is currently live and can be found [here!](www.veesergey.com)
 
 ## Features
 List of features
