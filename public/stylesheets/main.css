@@ -9,6 +9,11 @@
 .thumbnail .caption-full {
     padding: 9px;
 }
+
+.thumbnail .index-image{
+    height: 195px;
+    width: 260px;
+}
 .deleteForm {
     display: inline;
 }
@@ -27,6 +32,13 @@
     height: 400px;
     width: 100%;
 }
+
+.row {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .formDiv {
