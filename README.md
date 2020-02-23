@@ -50,4 +50,4 @@ This website is based on [Colt Steele's Web Developer course](https://www.udemy.
 Colt is an amazing instructor and I'm glad his course was introduced to me because it really helped pave the way into web development.
 
 ## Contact
-Created by me! Veesergey. Feel free to contact me through my github or my [linkedIn!](www.linkedin.com/in/veesergey)
+Created by me! Veesergey. Feel free to contact me through my github or my [linkedIn!](http://www.linkedin.com/in/veesergey)
