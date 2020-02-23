@@ -23,7 +23,7 @@ website I've actually hosted and theres more functionality and depth to the back
 * Google Maps API
 * Terraform
 
-The app is hosted through [heroku](https://www.heroku.com/) and the database is hosted through MongoDB Atlas.
+The app was first hosted through [heroku](https://www.heroku.com/) and is now also hosted on the AWS Cloud! The database is hosted through MongoDB Atlas.
 
 ## Setup
 No setup necessary! This application is currently live and can be found [here!](www.veesergey.com)
