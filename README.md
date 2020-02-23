@@ -25,6 +25,9 @@ website I've actually hosted and theres more functionality and depth to the back
 
 The app was first hosted through [heroku](https://www.heroku.com/) and is now also hosted on the AWS Cloud! The database is hosted through MongoDB Atlas.
 
+On the AWS side of things, the app is running on the Amazon Linux 2 AMI. PM2 is being used in order to keep the application up and running in case of it crashing or the EC2 instance being rebooted.
+
+
 ## Setup
 No setup necessary! This application is currently live and can be found [here!](www.veesergey.com)
 
