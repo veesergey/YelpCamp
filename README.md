@@ -29,7 +29,7 @@ On the AWS side of things, the app is running on the Amazon Linux 2 AMI. PM2 is 
 
 
 ## Setup
-No setup necessary! This application is currently live and can be found at [www.veesergey.com](http://www.veesergey.com).
+No setup necessary! This application is currently live and can be found at [www.veesergey.com](http://www.veesergey.com). NOTE: Currently not live as this application is no longer maintained. Its purpose has been served.
 
 ## Features
 List of features
